@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayo Follow di Instagram!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #E1306C;
+        }
+        .follow-btn {
+            background-color: #E1306C;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+        }
+        .follow-btn:hover {
+            background-color: #c02454;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ayo Saling Follow Instagram!</h1>
+    <p>Follow akun Instagram saya: <b>_notfound4444_</b></p>
+    <a href="https://www.instagram.com/_notfound4444_/" class="follow-btn">Follow Now!</a>
+    <h2>Jangan lupa untuk tinggalkan username Instagram kamu di bawah ini agar kita bisa saling follow!</h2>
+    <form id="follow-form">
+        <input type="text" id="username" placeholder="Masukkan Username Instagram" required>
+        <button type="submit">Kirim</button>
+    </form>
+    <script>
+        document.getElementById('follow-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var username = document.getElementById('username').value;
+            alert('Terima kasih! Saya akan follow ' + username + ' kembali!');
+            document.getElementById('username').value = ''; // Reset input field
+        });
+    </script>
+</body>
+</html>
